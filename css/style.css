@@ -9,23 +9,23 @@ body {
   margin-bottom: 0;
   background-color: #2d2d30;
   border: 0;
-  font-size: 11px !important;
+  font-size: 11px;
   letter-spacing: 4px;
   opacity: 0.9;
 }
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand { 
-  color: #d5d5d5 !important;
+  color: #d5d5d5;
 }
 
 /* On hover, the links will turn white */
 .navbar-nav li a:hover {
-  color: #fff !important;
+  color: #fff;
 }
 
 /* The active link */
 .navbar-nav li.active a {
-  color: #fff !important;
-  background-color:#29292c !important;
+  color: #fff;
+  background-color:#29292c;
 }
