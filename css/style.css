@@ -9,23 +9,34 @@ body {
   margin-bottom: 0;
   background-color: #2d2d30;
   border: 0;
-  font-size: 11px;
+  font-size: 11px !important;
   letter-spacing: 4px;
   opacity: 0.9;
 }
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand { 
-  color: #d5d5d5;
+  color: #d5d5d5 !important;
 }
 
 /* On hover, the links will turn white */
 .navbar-nav li a:hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* The active link */
 .navbar-nav li.active a {
-  color: #fff;
-  background-color:#29292c;
+  color: #fff !important;
+  background-color:#29292c !important;
+}
+
+/* carousel styling */
+.carousel-caption h3 {
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
 }
