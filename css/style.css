@@ -3,7 +3,7 @@ body {
     width: 100%;
   }
 
-/* navbar styling */
+/* NAVBAR */
 /* Add a dark background color with a little bit see-through */ 
 .navbar {
   margin-bottom: 0;
@@ -30,7 +30,7 @@ body {
   background-color:#29292c !important;
 }
 
-/* carousel styling */
+/* CAROUSEL */
 .carousel-caption h3 {
   color: #fff !important;
 }
@@ -39,4 +39,9 @@ body {
   .carousel-caption {
     display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
   }
+}
+
+/* ABOUT */
+.container {
+  padding: 80px 120px;
 }
