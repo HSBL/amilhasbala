@@ -130,9 +130,7 @@
         <div class="row">
             <div class="col s12 m4">
                 <h2 class="indigo-text text-darken-4">What I Do..</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>I enjoy turning complex problems into simple, beautiful and intuitive interface designs. Thinking logic with my left brain as a coder and take the right one to think creatively as a graphic designer.</p>
             </div>
             <div class="col s12 m6 offset-m2">
                 <ul class="tabs">
@@ -149,7 +147,8 @@
                 </div>
                 <div class="col s12" id="web">
                     <p class="flow-text indigo-text text-darken-4">Web Development</p>
-                    <p>As a front end developer, I know how to create your website to run across devices using the latest technologies available.</p>
+                    <p>As a front end developer, I know how to create your website to run across devices using the
+                        latest technologies available.</p>
                 </div>
             </div>
         </div>
@@ -210,7 +209,7 @@
     <footer class="page-footer grey darken-3">
         <div class="container">
             <div class="row">
-                <div class="col s12 m6">
+                <div class="col s12 m4">
                     <h5>About Me</h5>
                     <p>I am an experienced graphic designer with unconventional major in Chemical Engineering.</p>
                 </div>
@@ -218,7 +217,7 @@
                     <h5>Connect</h5>
                     <ul>
                         <li>
-                            <a href="#" class="grey-text text-lighten-3">Linkdin</a>
+                            <a href="#" class="grey-text text-lighten-3">Linkedin</a>
                             <a href="#" class="grey-text text-lighten-3">Behance</a>
                             <a href="#" class="grey-text text-lighten-3">Instagram</a>
                             <a href="#" class="grey-text text-lighten-3">Github</a>
@@ -238,6 +237,13 @@
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
+            $(window).scroll(function(){
+                if($(window).scrollTop()>800){
+                    $('nav').addClass('grey darken-4');
+                }else{
+                    $('nav').removeClass('grey darken-4');
+                }
+            });
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
             $('.tabs').tabs();
