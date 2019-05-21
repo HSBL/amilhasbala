@@ -29,6 +29,16 @@
             font-family: 'Ubuntu', sans-serif;
         }
 
+        .sidenav li>a {
+            color: white;
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .sidenav img {
+            margin-top: 10%;
+        }
+
         .section {
             padding-top: 4vw;
             padding-bottom: 4vw;
@@ -41,6 +51,10 @@
         .tabs .tab a:focus,
         .tabs .tab a:focus.active {
             background-color: transparent;
+        }
+
+        .btn {
+            border-radius: 5px;
         }
 
         @media screen and (max-width: 670px) {
@@ -84,49 +98,133 @@
                 </div>
             </nav>
         </div>
-        <div class="sidenav" id="mobile-links">
+        <div class="sidenav blue darken-4" id="mobile-links">
             <div class="container">
-                    <img src="img/me.jpg" alt="amil Hasbala"
-                    class="responsive-img materialboxed">
+                <img src="img/me.jpg" alt="amil Hasbala" class="responsive-img circle z-depth-2 materialboxed">
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#home"><b>Amil Hasbala</b></a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
     <!-- Portfolio -->
     <section class="container section scrollspy" id="portfolio">
+        <h2 class="indigo-text text-darken-4">Recent Project:</h2>
         <div class="row">
             <div class="col s12 m4">
-                <img src="https://i.postimg.cc/t4qKrKYr/ngopiin.png" alt="ngopi.in"
-                    class="responsive-img materialboxed">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://i.postimg.cc/t4qKrKYr/ngopiin.png" alt="ngopi.in">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Ngopi.in<i
+                                class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Ngopi.in<i
+                                class="material-icons right">close</i></span>
+                        <p>Logo design for a location based application for coffee enthusiast</p>
+                    </div>
+                </div>
             </div>
-            <div class="col s12 m6 offset-m1">
-                <h2 class="indigo-text text-darken-4">Ngopi.in</h2>
-                <p>Logo design for a location based application for coffee enthusiast</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 m4 push-m7 offset-m1">
-                <img src="https://i.postimg.cc/T3tZBtbT/beetrack.png" alt="beetrack"
-                    class="responsive-img materialboxed">
-            </div>
-            <div class="col s12 m6 pull-m5 offset-m1 right-align">
-                <h2 class="indigo-text text-darken-4">Beetrack</h2>
-                <p>Logo design for tracking app </p>
-            </div>
-        </div>
-        <div class="row">
             <div class="col s12 m4">
-                <img src="https://i.postimg.cc/tRPG7dKz/instanhijab.png" alt="instanhijab"
-                    class="responsive-img materialboxed">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://i.postimg.cc/tRPG7dKz/instanhijab.png" alt="instanhijab">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Instan Hijab<i
+                                class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Instan Hijab<i
+                                class="material-icons right">close</i></span>
+                        <p>Logo design for Instanhijab.com moslem outfit marketplace</p>
+                    </div>
+                </div>
             </div>
-            <div class="col s12 m6 offset-m1">
-                <h2 class="indigo-text text-darken-4">Instan Hijab</h2>
-                <p>Logo design for Instanhijab.com moslem outfit marketplace</p>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://i.postimg.cc/jdb0fwKY/nextravel.png" alt="nextravel">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Nextravel<i
+                                class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Nextravel<i
+                                class="material-icons right">close</i></span>
+                        <p>Logo design for a travel blog</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://i.postimg.cc/cHtyRfr0/nontonfilm.png" alt="nontonfilm">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Nontonfilm<i
+                                class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Nontonfilm<i
+                                class="material-icons right">close</i></span>
+                        <p>Logo design for Indonesian based movie portal </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://i.postimg.cc/1XxxJ4q6/learnthefact.png" alt="learnthefact">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Learn The Fact<i
+                                class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Learn The Fact<i
+                                class="material-icons right">close</i></span>
+                        <p>Logo design for a fact check website</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://i.postimg.cc/Jh2CHp7p/baku-beri.png" alt="bakuberi">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Bakuberi<i
+                                class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Bakuberi<i
+                                class="material-icons right">close</i></span>
+                        <p>Logo design for Bakuberi </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="https://i.postimg.cc/T3tZBtbT/beetrack.png" alt="beetrack">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Beetrack<i
+                                class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Beetrack<i
+                                class="material-icons right">close</i></span>
+                        <p>Logo design for location based tracking application </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -172,7 +270,7 @@
     <!-- parallax -->
     <div class="parallax-container">
         <div class="parallax">
-            <img src="https://images.pexels.com/photos/5933/color-paint-palette-wall-painting.jpg" alt="engineer"
+            <img src="https://images.pexels.com/photos/784935/pexels-photo-784935.jpeg" alt="art"
                 class="responsive-img">
         </div>
     </div>
@@ -184,38 +282,38 @@
                 <p>I will provide styling and user experience that incorporate your needs.</p>
             </div>
             <div class="col s12 m5 offset-m2">
-                <form action="">
+                <form action="https://formspree.io/amilhasbala@gmail.com" method="POST">
                     <div class="input-field">
                         <i class="material-icons prefix">email</i>
-                        <input type="email" id="email">
+                        <input name="email" type="email" id="email">
                         <label for="email">Your Email</label>
                     </div>
                     <div class="input-field">
                         <i class="material-icons prefix">message</i>
-                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <textarea name="message" id="message" class="materialize-textarea"></textarea>
                         <label for="message">Your message</label>
                     </div>
                     <div class="input-field">
-                        <input type="text" id="date" class="datepicker">
+                        <input name="date" type="text" id="date" class="datepicker">
                         <label for="date">When do you need me?</label>
                     </div>
                     <div class="input-field">
                         <p>What do you need:</p>
                         <p>
                             <label>
-                                <input type="checkbox" name="" id="">
+                                <input name="graphicDesignChecked" type="checkbox">
                                 <span>Graphic Design</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" name="" id="">
+                                <input name="webDevelopmentChecked" type="checkbox">
                                 <span>Web Development</span>
                             </label>
                         </p>
                     </div>
                     <div class="input-field center">
-                        <button class="btn">Submit</button>
+                        <button type="submit" value="Send" class="btn blue darken-4">Submit</button>
                     </div>
                 </form>
             </div>
@@ -235,8 +333,11 @@
                         <li>
                             <a href="#" class="grey-text text-lighten-3">Linkedin</a>
                             <a href="#" class="grey-text text-lighten-3">Behance</a>
+                            <a href="#" class="grey-text text-lighten-3">Dribbble</a>
                             <a href="#" class="grey-text text-lighten-3">Instagram</a>
+                            <a href="#" class="grey-text text-lighten-3">Facebook</a>
                             <a href="#" class="grey-text text-lighten-3">Github</a>
+                            <a href="#" class="grey-text text-lighten-3">Stackoverflow</a>
                         </li>
                     </ul>
                 </div>
