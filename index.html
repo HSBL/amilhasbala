@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <!-- Custom CSS -->
@@ -20,6 +21,12 @@
             background-size: cover;
             background-position: center;
             min-height: 1000px;
+        }
+
+        .brand-logo,
+        h2,
+        h5 {
+            font-family: 'Ubuntu', sans-serif;
         }
 
         .section {
@@ -45,43 +52,50 @@
 
 </head>
 
-<body class="grey lighten-4">
+<body class="grey lighten-4 scrollspy" id="home">
     <!-- navbar -->
     <header>
         <div class="navbar-fixed">
             <nav class="nav-wrapper transparent">
                 <div class="container">
-                    <a href="#" class="brand-logo">Amil Hasbala</a>
+                    <a href="#home" class="brand-logo">Amil Hasbala</a>
                     <a href="" class="sidenav-trigger left" data-target="mobile-links">
                         <i class="material-icons">menu</i>
                     </a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#" class="btn-floating btn-small black">
-                                <i class="fab fa-instagram"></i>
+                        <li><a href="https://linkedin.com/in/amil-hasbala-64528143/"
+                                class="btn-floating btn-small black">
+                                <i class="fab fa-linkedin"></i>
                             </a>
                         </li>
-                        <li><a href="#" class="btn-floating btn-small black">
-                                <i class="fab fa-facebook"></i>
+                        <li><a href="https://github.com/HSBL" class="btn-floating btn-small black">
+                                <i class="fab fa-github"></i>
                             </a>
                         </li>
-                        <li><a href="#" class="btn-floating btn-small black">
-                                <i class="fab fa-twitter"></i>
+                        <li><a href="https://dribbble.com/ahas8" class="btn-floating btn-small black">
+                                <i class="fab fa-dribbble"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <ul class="sidenav" id="mobile-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="sidenav" id="mobile-links">
+            <div class="container">
+                    <img src="img/me.jpg" alt="amil Hasbala"
+                    class="responsive-img materialboxed">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </header>
     <!-- Portfolio -->
     <section class="container section scrollspy" id="portfolio">
@@ -130,7 +144,9 @@
         <div class="row">
             <div class="col s12 m4">
                 <h2 class="indigo-text text-darken-4">What I Do..</h2>
-                <p>I enjoy turning complex problems into simple, beautiful and intuitive interface designs. Thinking logic with my left brain as a coder and take the right one to think creatively as a graphic designer.</p>
+                <p>I enjoy turning complex problems into simple, beautiful and intuitive interface designs. Thinking
+                    logic with my left brain as a coder and take the right one to think creatively as a graphic
+                    designer.</p>
             </div>
             <div class="col s12 m6 offset-m2">
                 <ul class="tabs">
@@ -237,10 +253,10 @@
     <script>
         $(document).ready(function () {
             $('.sidenav').sidenav();
-            $(window).scroll(function(){
-                if($(window).scrollTop()>800){
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 800) {
                     $('nav').addClass('grey darken-4');
-                }else{
+                } else {
                     $('nav').removeClass('grey darken-4');
                 }
             });
