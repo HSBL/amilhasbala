@@ -1,0 +1,67 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/solid.scss";
+@import "./fontawesome/scss/brands.scss";
+
+$text-on-dark: grey;
+
+// header{
+//     margin-bottom: 50px;
+// }
+.navbar--scrolled {
+    background-color: black;
+}
+
+.carousel {
+    position: relative;
+
+    .video {
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .content {
+        position: absolute;
+        bottom: 30px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+section {
+    padding-top: 100px;
+
+    .section-heading {
+        margin: 20px;
+    }
+
+    .media-left img {
+        max-width: 70px;
+        margin: 0 10px;
+    }
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+
+    p {
+        margin: 0;
+        color: $text-on-dark;
+        text-align: center;
+    }
+}
+
+//font awesome mixin
+.twitter {
+    @extend %fa-icon;
+    @extend .fab;
+
+    &:before {
+        content: fa-content($fa-var-twitter);
+    }
+}
