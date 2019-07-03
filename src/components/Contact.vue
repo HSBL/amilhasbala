@@ -126,7 +126,7 @@ export default {
     return {
       skills: {
         intro:
-          "I love making logical problems into beautiful and intuitive interface designs. Thinking logic with my left brain as a coder and take the right one to think creatively as a graphic designer.",
+          "I love making logical problems into beautiful and intuitive interface designs. Thinking logic with my left brain and take the right one to think creatively.",
         graphic: [
           "UI/UX Design",
           "Branding",
