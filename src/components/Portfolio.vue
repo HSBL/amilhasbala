@@ -51,6 +51,20 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    getShots() {
+      this.$http
+        .get(
+          "https://api.dribbble.com/v2/user/shots?access_token=cb10c4282b1b183e29c8eb7c66bd38bc8be9bd031b99e9b2cb8680f8971231ae"
+        )
+        .then(result => {
+          console.log(result);
+        });
+    }
+  },
+  created() {
+    this.getShots();
   }
 };
 </script>
