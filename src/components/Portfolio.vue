@@ -11,7 +11,7 @@
         v-bind:key="shot.id"
         onclick="this.classList.toggle('expanded')"
       >
-        <img class="img-fluid" v-bind:src="shot.image" v-bind:alt="shot.title" />
+        <img class="img-fluid" v-bind:src="shot.images.hidpi" v-bind:alt="shot.title" />
         <div class="text1">
           <div class="text-content">
             <h1 class="title">{{ shot.title }}</h1>
@@ -30,20 +30,14 @@
 </template>
 
 <script>
+import { constants } from "crypto";
 export default {
   components: {},
   data() {
     return {
       shots: [
         {
-          image: "https://i.postimg.cc/t4qKrKYr/ngopiin.png",
-          title: "Ngopi.in",
-          description:
-            "Logo design of a location based application for coffee enthusiast",
-          id: 1
-        },
-        {
-          image: "https://i.postimg.cc/tRPG7dKz/instanhijab.png",
+          images: { hidpi: "https://i.postimg.cc/tRPG7dKz/instanhijab.png" },
           title: "Instan Hijab",
           description:
             "Logo design for Instanhijab.com moslem outfit marketplace",
@@ -59,8 +53,13 @@ export default {
           "https://api.dribbble.com/v2/user/shots?access_token=cb10c4282b1b183e29c8eb7c66bd38bc8be9bd031b99e9b2cb8680f8971231ae"
         )
         .then(result => {
-          console.log(result);
-          console.log("getshot success")
+          for (let i = 0; i < result.data.length; i++) {
+            result.data[i].description = result.data[i].description.substr(
+              3,
+              result.data[i].description.length - 7
+            );
+            this.shots.push(result.data[i]);
+          }
         });
     }
   },
