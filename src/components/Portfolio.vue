@@ -60,6 +60,7 @@ export default {
         )
         .then(result => {
           console.log(result);
+          console.log("getshot success")
         });
     }
   },
