@@ -37,11 +37,25 @@ export default {
     return {
       shots: [
         {
+          images: { hidpi: "https://i.postimg.cc/hvhh88tV/amilhasbalacom.png" },
+          title: "Amilhasbala.com",
+          description:
+            "This web portfolio was built from the ground up using bootstrap for CSS framework and Vue as Javascript framework",
+          id: 1
+        },
+        {
           images: { hidpi: "https://i.postimg.cc/tRPG7dKz/instanhijab.png" },
           title: "Instan Hijab",
           description:
             "Logo design for Instanhijab.com moslem outfit marketplace",
           id: 2
+        },
+        {
+          images: { hidpi: "https://i.postimg.cc/52Q77DRR/imagesearchvue.png" },
+          title: "Vue Code Challenge",
+          description:
+            "This challenge was my first attempt at Vue",
+          id: 3
         }
       ]
     };
