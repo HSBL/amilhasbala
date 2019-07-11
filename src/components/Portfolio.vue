@@ -4,14 +4,45 @@
       <h3>My recent works:</h3>
       <p>
         this portfolio was direct REST API from
-        <a href="https://dribbble.com/ahas8">my Dribbble.com profile</a>
+        <a
+          href="https://dribbble.com/ahas8"
+        >my Dribbble.com profile</a>
       </p>
     </div>
+    
+    <!-- modal -->
+    <div
+      v-for="shot in shots"
+      v-bind:key="shot.id"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-modal="true"
+      v-bind:id="'modalId'+shot.id"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title h4" id="myLargeModalLabel">{{ shot.title }}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" v-bind:src="shot.images.hidpi" v-bind:alt="shot.title" />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="card-columns">
       <div
         class="card shadow"
         v-for="shot in shots"
         v-bind:key="shot.id"
+        data-toggle="modal"
+        v-bind:data-target="'#modalId'+shot.id"
       >
         <img class="img-fluid" v-bind:src="shot.images.hidpi" v-bind:alt="shot.title" />
         <div class="text1">
@@ -85,7 +116,7 @@ export default {
   padding-bottom: 50px;
   position: relative;
   text-align: center;
-  img{
+  img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }

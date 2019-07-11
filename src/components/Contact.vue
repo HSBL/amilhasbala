@@ -18,7 +18,7 @@
                 <div class="service-box media">
                   <div class="media-left">
                     <div class="text-left">
-                      <img src="../assets/icon-04.png" alt="design" class="img-responsive">
+                      <img src="../assets/icon-06.png" alt="design" class="img-responsive">
                     </div>
                   </div>
                   <div class="media-body text-left">
@@ -38,7 +38,7 @@
                 <div class="service-box media">
                   <div class="media-left">
                     <div class="text-left">
-                      <img src="../assets/icon-03.png" alt="develop" class="img-responsive">
+                      <img src="../assets/icon-05.png" alt="develop" class="img-responsive">
                     </div>
                   </div>
                   <div class="media-body text-left">

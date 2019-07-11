@@ -4,7 +4,7 @@
       class="shadow navbar fixed-top navbar-expand-md navbar-dark"
       :class="{ 'navbar--scrolled': !showNavbar }"
     >
-      <a class="navbar-brand" v-if="!showNavbar" href="#">Amil Hasbala</a>
+      <a class="navbar-brand" v-if="!showNavbar" href="#">[ Has ]</a>
       <button
         class="navbar-toggler navbar-toggler-right"
         type="button"
