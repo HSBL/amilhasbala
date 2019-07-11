@@ -4,6 +4,7 @@
     <div class="fore"></div>
     <div class="main">
       <h1>Amil Hasbala</h1>
+      <p>This site was hosted from <a href="https://github.com/HSBL">my github repository</a></p>
     </div>
   </video-bg>
 </template>
@@ -85,6 +86,7 @@ export default {
   position: absolute;
   top: 50%;
   margin-top: -50px;
+  padding-left: 5vw;
 }
 .fore {
   background-image: url("../assets/code-foreground1.png");

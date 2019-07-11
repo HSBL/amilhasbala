@@ -2,14 +2,16 @@
   <section>
     <div>
       <h3>My recent works:</h3>
-      <p>this portfolio was live API from my Dribbble.com profile</p>
+      <p>
+        this portfolio was direct REST API from
+        <a href="https://dribbble.com/ahas8">my Dribbble.com profile</a>
+      </p>
     </div>
     <div class="card-columns">
       <div
         class="card shadow"
         v-for="shot in shots"
         v-bind:key="shot.id"
-        onclick="this.classList.toggle('expanded')"
       >
         <img class="img-fluid" v-bind:src="shot.images.hidpi" v-bind:alt="shot.title" />
         <div class="text1">
@@ -18,12 +20,6 @@
             <div class="body-text">{{ shot.description }}</div>
           </div>
         </div>
-        <img
-          src="https://image.flaticon.com/icons/svg/1665/1665604.svg"
-          class="chevron img-fluid"
-          width="30"
-          alt
-        />
       </div>
     </div>
   </section>
@@ -53,8 +49,7 @@ export default {
         {
           images: { hidpi: "https://i.postimg.cc/52Q77DRR/imagesearchvue.png" },
           title: "Vue Code Challenge",
-          description:
-            "This challenge was my first attempt at Vue",
+          description: "This challenge was my first attempt at Vue",
           id: 3
         }
       ]
@@ -90,8 +85,14 @@ export default {
   padding-bottom: 50px;
   position: relative;
   text-align: center;
+  img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
   .text1 {
-    display: none;
+    padding: 10px;
+    display: block;
+    color: rgb(58, 58, 58);
   }
   .chevron {
     position: absolute;
@@ -99,15 +100,6 @@ export default {
     left: calc(50% - 15px);
     transform: rotate(180deg);
     transition: transform 1000ms;
-  }
-}
-.expanded {
-  .text1 {
-    padding: 10px;
-    display: block;
-  }
-  .chevron {
-    transform: rotate(0deg);
   }
 }
 </style>
