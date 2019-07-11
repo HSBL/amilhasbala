@@ -4,7 +4,7 @@
       class="shadow navbar fixed-top navbar-expand-md navbar-dark"
       :class="{ 'navbar--scrolled': !showNavbar }"
     >
-      <a class="navbar-brand" href="#">Amil Hasbala</a>
+      <a class="navbar-brand" v-if="!showNavbar" href="#">Amil Hasbala</a>
       <button
         class="navbar-toggler navbar-toggler-right"
         type="button"
@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     onScroll() {
-      if (window.pageYOffset > 150) {
+      if (window.pageYOffset > window.innerHeight) {
         this.showNavbar = false;
       } else{
         this.showNavbar = true;
