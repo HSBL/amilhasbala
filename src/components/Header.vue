@@ -66,4 +66,12 @@ export default {
 
 
 <style lang="scss" scoped>
+.navbar--scrolled {
+    background-color: black;
+    .navbar-brand {
+        padding-left: 6rem;
+        color: limegreen;
+        font-size: 2em;
+    }
+}
 </style>

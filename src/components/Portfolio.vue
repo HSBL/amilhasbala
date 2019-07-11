@@ -3,13 +3,13 @@
     <div>
       <h3>My recent works:</h3>
       <p>
-        this portfolio was direct REST API from
+        this part of portfolio was direct REST API from
         <a
           href="https://dribbble.com/ahas8"
         >my Dribbble.com profile</a>
       </p>
     </div>
-    
+
     <!-- modal -->
     <div
       v-for="shot in shots"
@@ -21,7 +21,7 @@
       aria-modal="true"
       v-bind:id="'modalId'+shot.id"
     >
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title h4" id="myLargeModalLabel">{{ shot.title }}</h5>
@@ -30,7 +30,14 @@
             </button>
           </div>
           <div class="modal-body">
-            <img class="img-fluid" v-bind:src="shot.images.hidpi" v-bind:alt="shot.title" />
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <img class="img-fluid" v-bind:src="shot.images.hidpi" v-bind:alt="shot.title" />
+              </div>
+              <div class="col-lg-4">
+                <p>{{ shot.description }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -67,7 +74,7 @@ export default {
           images: { hidpi: "https://i.postimg.cc/hvhh88tV/amilhasbalacom.png" },
           title: "Amilhasbala.com",
           description:
-            "This web portfolio was built from the ground up using bootstrap for CSS framework and Vue as Javascript framework",
+            "This web portfolio was built from the ground up using bootstrap for CSS framework and Vue as Javascript framework. Its live from my github repository via netlify git deploy.",
           id: 1
         },
         {
@@ -76,13 +83,13 @@ export default {
           description:
             "Logo design for Instanhijab.com moslem outfit marketplace",
           id: 2
-        },
-        {
-          images: { hidpi: "https://i.postimg.cc/52Q77DRR/imagesearchvue.png" },
-          title: "Vue Code Challenge",
-          description: "This challenge was my first attempt at Vue",
-          id: 3
         }
+        // {
+        //   images: { hidpi: "https://i.postimg.cc/52Q77DRR/imagesearchvue.png" },
+        //   title: "Vue Code Challenge",
+        //   description: "This challenge was my first attempt at Vue",
+        //   id: 3
+        // }
       ]
     };
   },
@@ -131,6 +138,12 @@ export default {
     left: calc(50% - 15px);
     transform: rotate(180deg);
     transition: transform 1000ms;
+  }
+}
+.modal {
+  color: black;
+  p {
+    padding: 2rem;
   }
 }
 </style>

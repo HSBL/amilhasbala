@@ -1,10 +1,19 @@
 <template>
-  <video-bg :sources="['https://static.videezy.com/system/resources/previews/000/005/583/original/Typing_Overhead_MacbookPro_BRoll.mp4']" class="box">
+  <video-bg
+    :sources="['https://static.videezy.com/system/resources/previews/000/005/583/original/Typing_Overhead_MacbookPro_BRoll.mp4']"
+    class="box"
+  >
     <div class="back"></div>
     <div class="fore"></div>
     <div class="main">
-      <h1>Amil Hasbala</h1>
-      <p>This site was hosted from <a href="https://github.com/HSBL">my github repository</a></p>
+      <h1>
+        Amil
+        <span>Has</span>bala
+      </h1>
+      <p>
+        This site was hosted from
+        <a href="https://github.com/HSBL">my github repository</a>
+      </p>
     </div>
   </video-bg>
 </template>
@@ -87,6 +96,17 @@ export default {
   top: 50%;
   margin-top: -50px;
   padding-left: 5vw;
+  h1 {
+    span {
+      color: limegreen;
+    }
+  }
+  a {
+    color: white;
+  }
+  a:hover {
+    color: limegreen;
+  }
 }
 .fore {
   background-image: url("../assets/code-foreground1.png");
