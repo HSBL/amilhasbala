@@ -1,5 +1,7 @@
 # amilhasbala
 
+This repository is live via netlify: amilhasbala.com
+
 ## Project setup
 ```
 npm install
