@@ -72,6 +72,7 @@ export default {
         padding-left: 6rem;
         color: limegreen;
         font-size: 2em;
+        font-weight: bold;
     }
 }
 </style>
